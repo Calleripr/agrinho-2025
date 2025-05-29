@@ -2,6 +2,69 @@ function setup() {
   createCanvas(400, 400);
 }
 
+let Xjogador1 = 340;
+let Xjogador2 = 340;
+
+
 function draw() {
-  background(220);
+ ativaJogo();
+ desenhaJogadores();
+ desenhaLinhaDeChegada();
+   
+  
+  if (Xjogador1 < 10) {
+    fill("white")
+    textSize(30);
+    text("jogador 1 venceu!",75,200);
+    noLoop();
+    
+  }
+ 
+  if (Xjogador2 < 10) {
+   fill("white");
+   textSize(30);
+   text("jogador 2 venceu!",75,300);
+   noLoop();
+   
+  }
+}
+  function keyReleased() {
+  if (key === 'l') {
+  Xjogador1 += random(-50);
+    
+  }
+  if (key == 'a') {
+    
+  Xjogador2 += random(-50);
+ 
+  }   
+}
+
+function ativaJogo(){
+  if (focused==true){
+  background("#5d3d36");
+}    
+  else{
+  background("white")
+  
+  }
+}
+
+function desenhaJogadores(){
+  textSize(50);
+  text("🏎️",Xjogador1 ,100);
+  text("🏇",Xjogador2 ,300);
+}
+
+function desenhaLinhaDeChegada(){
+  fill("black");
+  rect(50,0,10,400);
+  fill("white");
+  for (let yAtual=0;yAtual < 400; yAtual += 20){
+  rect(50, yAtual, 10, 10)
+    
+    
+  }
+
+
 }
