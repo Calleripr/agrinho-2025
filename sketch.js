@@ -4,7 +4,8 @@ function setup() {
 
 let Xjogador1 = 340;
 let Xjogador2 = 340;
-
+let Xjogador3 = 340;
+let Xjogador4 = 340;
 
 function draw() {
  ativaJogo();
@@ -23,9 +24,16 @@ function draw() {
   if (Xjogador2 < 10) {
    fill("white");
    textSize(30);
-   text("jogador 2 venceu!",75,300);
+   text("jogador 2 venceu!",75,200);
    noLoop();
    
+ }
+ if (Xjogador3 < 10) {
+    fill("white")
+    textSize(30);
+    text("jogador 3 venceu!",75,200);
+    noLoop();
+    
   }
 }
   function keyReleased() {
@@ -38,6 +46,18 @@ function draw() {
   Xjogador2 += random(-50);
  
   }   
+  if (key=== 's') {
+    
+  Xjogador3 += random(-50);
+    
+    
+  }
+  
+  
+  
+  
+  
+  
 }
 
 function ativaJogo(){
@@ -52,8 +72,10 @@ function ativaJogo(){
 
 function desenhaJogadores(){
   textSize(50);
-  text("🏎️",Xjogador1 ,100);
-  text("🏇",Xjogador2 ,300);
+  text("🏎️",Xjogador1 ,70);
+  text("🏇",Xjogador2 ,140);
+  text("🚜",Xjogador3 ,210);
+
 }
 
 function desenhaLinhaDeChegada(){
