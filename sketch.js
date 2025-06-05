@@ -70,7 +70,10 @@ function draw() {
 function ativaJogo(){
   if (focused==true){
   background("#5d3d36");
-}    
+
+  fill("gray");
+    rect(1,200,400,200);
+  }    
   else{
   background("white")
   
