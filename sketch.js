@@ -88,7 +88,7 @@ function desenhaJogadores(){
 function desenhaLinhaDeChegada(){
   fill("black");
   rect(50,0,10,400);
-  fill("white");
+  fill("yellow");
   for (let yAtual=0;yAtual < 400; yAtual += 20){
   rect(50, yAtual, 10, 10)
     
