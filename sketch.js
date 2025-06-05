@@ -71,7 +71,7 @@ function ativaJogo(){
   if (focused==true){
   background("#5d3d36");
 
-  fill("gray");
+  fill("#a9a9a9");
     rect(1,200,400,200);
   }    
   else{
