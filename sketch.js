@@ -16,7 +16,7 @@ function draw() {
   if (Xjogador1 < 10) {
     fill("white")
     textSize(30);
-    text("jogador 1 venceu!",75,200);
+    text("A cidade venceu!",75,200);
     noLoop();
     
   }
@@ -24,40 +24,47 @@ function draw() {
   if (Xjogador2 < 10) {
    fill("white");
    textSize(30);
-   text("jogador 2 venceu!",75,200);
+   text("O campo venceu!",75,200);
    noLoop();
    
  }
  if (Xjogador3 < 10) {
     fill("white")
     textSize(30);
-    text("jogador 3 venceu!",75,200);
+    text("O campo venceu!",75,200);
+    noLoop();
+    
+  }
+ if (Xjogador4 < 10) {
+    fill("white")
+    textSize(30);
+    text("A cidade venceu!",75,200);
     noLoop();
     
   }
 }
   function keyReleased() {
   if (key === 'l') {
-  Xjogador1 += random(-50);
+  Xjogador1 += random(-30);
     
   }
   if (key == 'a') {
     
-  Xjogador2 += random(-50);
+  Xjogador2 += random(-30);
  
   }   
   if (key=== 's') {
     
-  Xjogador3 += random(-50);
-    
-    
+  Xjogador3 += random(-30);
+     
   }
   
-  
-  
-  
-  
-  
+  if (key=== 'k') {
+    
+  Xjogador4 += random(-30)
+    
+  }
+   
 }
 
 function ativaJogo(){
@@ -73,9 +80,9 @@ function ativaJogo(){
 function desenhaJogadores(){
   textSize(50);
   text("🏎️",Xjogador1 ,70);
-  text("🏇",Xjogador2 ,140);
-  text("🚜",Xjogador3 ,210);
-
+  text("🏇",Xjogador2 ,170);
+  text("🚜",Xjogador3 ,270);
+  text("🏍️",Xjogador4 ,350);
 }
 
 function desenhaLinhaDeChegada(){
