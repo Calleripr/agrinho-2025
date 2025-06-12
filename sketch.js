@@ -101,6 +101,8 @@ function desenhaLinhaDeChegada(){
     
     
   }
-
-
+fill("black");
+textSize(20);
+text("aperte as teclas a,s k,l",150,20);
+ 
 }
