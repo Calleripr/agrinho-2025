@@ -83,13 +83,9 @@ function ativaJogo(){
 function desenhaJogadores(){
   textSize(50);
   text("🚜",Xjogador1 ,70);
-//https://emojipedia.org/pt/trator
   text("🏇",Xjogador2 ,170);
-//https://emojipedia.org/pt/corrida-de-cavalos
   text("🏎️",Xjogador3 ,270);
-//https://emojipedia.org/pt/carro-de-corrida
   text("🏍️",Xjogador4 ,350);
-//https://emojipedia.org/pt/motocicleta
 }
 
 function desenhaLinhaDeChegada(){
